@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav class="nav container">
+                <a hef="#" class="nav__logo">
+                    Ouidad <span>Mochariq</span>
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#list">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" style="color: #74C0FC;" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" style="color: #db9ae6;" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer Student</p>
+                <h1>Hi, I'm <span>Ouidad</span><br> Mochariq From Morocco</h1>
+            </div>
+        </div>
+    </div>
+<!-----------About--------------------------------------> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am a software engineering student at the National School of Applied Sciences in Marrakesh,
+                       with hands-on experience in the data field and a growing interest in full-stack development.
+                       Recently, I was part of an exciting project involving computer vision and AI, where I contributed
+                       to developing an innovative writing application. During my last internship, I leveraged Python to
+                       build a robust application that scrapes data, manipulates it, and automates tasks and decision-making
+                       processes.
+
+                       Currently, as part of my internship at CodeAlpha, I have developed a calculator and a music player using
+                       JavaScript, HTML, and CSS. These experiences have not only honed my technical skills but also fueled my 
+                       passion for problem-solving and innovation.
+                        
+                       I am deeply passionate about being an active member of the tech community, eager to collaborate, learn 
+                       from others, and contribute to shared goals. Engaging with like-minded professionals and continuously 
+                       expanding my knowledge and network in the field excites me. I'm enthusiastic about the opportunities 
+                       to connect with others and be part of a vibrant tech ecosystem!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Rest API</span><br>Back end</li>
+                            <li><span>Interactive Design</span><br>Designing Web/App interfaces</li>
+                            <li><span>Python</span><br>with Data Science & AI</li>
+                            <li><span>Unified Modeling Language</span><br>Software system's design</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Juin 2024 - August 2024</span><br>Internship at brioss technologies</li>
+                            <li><span>Septembre 2024 - October 2024</span><br>Internship at CodeAlpha</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!------------------------Skills----------------------------> 
+    <div id="list">
+        <div class="container">
+            <h1 class="subtitle secondory">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <div class="technologies">
+                        <i class="fa-brands fa-html5" style="color: #FFD43B;"></i>
+                        <i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i>
+                        <i class="fa-brands fa-js" style="color: #FFD43B;"></i>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Back end</h2>
+                    <div class="technologies">
+                        <i class="fa-brands fa-php" style="color: #B197FC;"></i>
+                        <i class="fa-solid fa-database"></i>
+                        <i class="fa-brands fa-java" style="color: #74C0FC;"></i>
+                    </div>
+                </div>
+                
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <div class="technologies">
+                        <i class="fa-solid fa-magnifying-glass-chart" style="color: #63E6BE;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------Portfolio----------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle secondory">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/calculator.PNG" alt="">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Simple handy calculator with JS, HTML and CSS</p>
+                        <br>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/music_player_app.PNG" alt="">
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <p>Music Player with JS, HTML and CSS</p>
+                        <br>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/writing_vision.png" alt="">
+                    <div class="layer">
+                        <h3>Writing with computer vision</h3>
+                        <p>Application that predict the text that you are writing 
+                            simply by your finger mouvements 
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--------------------Contact---------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mochariqouidad@gmail.com</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Professional CV Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Ouidad.M </p>
+        </div>
+    </div>
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links")
+        let tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+        let sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+        
+    </script>
+    
+</body>
+</html>
